@@ -28,6 +28,6 @@ public class ObjectPosition implements Serializable {
 		return new ObjectPosition(objects.get(random.nextInt(5)),
 				latitude.add(BigDecimal.valueOf(random.nextDouble())),
 				longitude.add(BigDecimal.valueOf(random.nextDouble())),
-				LocalDateTime.now().plusMinutes(random.nextInt(40)).toEpochSecond(ZoneOffset.UTC));
+				LocalDateTime.now().plusHours(random.nextInt(10)).toEpochSecond(ZoneOffset.UTC));
 	}
 }
